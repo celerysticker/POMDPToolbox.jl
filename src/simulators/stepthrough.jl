@@ -153,9 +153,9 @@ Example:
     policy = RandomPolicy(pomdp)
 
     for (s, a, o, r) in stepthrough(pomdp, policy, "s,a,o,r", max_steps=10)
-        println("in state \$s")
-        println("took action \$o")
-        println("received observation \$o and reward \$r")
+        println("in state $s")
+        println("took action $o")
+        println("received observation $o and reward $r")
     end
 
 The spec argument can be a string, tuple of symbols, or single symbol and follows the same pattern as `eachstep` called on a `SimHistory` object.
